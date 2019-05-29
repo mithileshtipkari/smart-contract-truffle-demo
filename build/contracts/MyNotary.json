@@ -1,11 +1,11 @@
-
-  "contractName": "Storage",
+{
+  "contractName": "MyNotary",
   "abi": [
     {
       "constant": false,
       "inputs": [
         {
-          "name": "data",
+          "name": "notary",
           "type": "uint256"
         }
       ],
@@ -30,17 +30,17 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.4.26+commit.4563c3fc\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"data\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/G/Javascript/ethereum/truffle/demo/contracts/Storage.sol\":\"Storage\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/G/Javascript/ethereum/truffle/demo/contracts/Storage.sol\":{\"keccak256\":\"0x604beb0637c117d47e75fac3e305e2623506d807f6e419dee723f4964af1cfa9\",\"urls\":[\"bzzr://569970627ebee070b8ec39fb7ac999fc62c23e3b5f861371081003eed0f61a9a\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5060df8061001f6000396000f3006080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806360fe47b114604e5780636d4ce63c146078575b600080fd5b348015605957600080fd5b5060766004803603810190808035906020019092919050505060a0565b005b348015608357600080fd5b50608a60aa565b6040518082815260200191505060405180910390f35b8060008190555050565b600080549050905600a165627a7a723058207f00b6f03af08471d10354bd1dd0884399623374dd2e4993bba2fd8a05d88bce0029",
-  "deployedBytecode": "0x6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806360fe47b114604e5780636d4ce63c146078575b600080fd5b348015605957600080fd5b5060766004803603810190808035906020019092919050505060a0565b005b348015608357600080fd5b50608a60aa565b6040518082815260200191505060405180910390f35b8060008190555050565b600080549050905600a165627a7a723058207f00b6f03af08471d10354bd1dd0884399623374dd2e4993bba2fd8a05d88bce0029",
-  "sourceMap": "27:177:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:177:1;;;;;;;",
-  "deployedSourceMap": "27:177:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;70:57;;8:9:-1;5:2;;;30:1;27;20:12;5:2;70:57:1;;;;;;;;;;;;;;;;;;;;;;;;;;129:72;;8:9:-1;5:2;;;30:1;27;20:12;5:2;129:72:1;;;;;;;;;;;;;;;;;;;;;;;70:57;117:4;104:10;:17;;;;70:57;:::o;129:72::-;162:7;185:10;;178:17;;129:72;:::o",
-  "source": "pragma solidity ^0.4.8;\r\n\r\ncontract Storage {\r\n  uint256 storedData;\r\nfunction set(uint256 data) {\r\n    storedData = data;\r\n  }\r\nfunction get() constant returns (uint256) {\r\n    return storedData;\r\n  }\r\n}\r\n",
-  "sourcePath": "G:/Javascript/ethereum/truffle/demo/contracts/Storage.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.4.26+commit.4563c3fc\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"notary\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/G/Javascript/ethereum/truffle/truffle-demo/contracts/MyNotary.sol\":\"MyNotary\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/G/Javascript/ethereum/truffle/truffle-demo/contracts/MyNotary.sol\":{\"keccak256\":\"0x6f49b85e6745d08e6e968898b86da970072096aa521ec94f7aaf969612f2553d\",\"urls\":[\"bzzr://d92a25648a2c0cb9042a3900d1fd0460be8444436f5d699a6004037f9eb2b5ee\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060df8061001f6000396000f3006080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806360fe47b114604e5780636d4ce63c146078575b600080fd5b348015605957600080fd5b5060766004803603810190808035906020019092919050505060a0565b005b348015608357600080fd5b50608a60aa565b6040518082815260200191505060405180910390f35b8060008190555050565b600080549050905600a165627a7a72305820d7c51cc18a0c1b64c3d1d0806932504e06ea137a804ae530c137bef4743e7c210029",
+  "deployedBytecode": "0x6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806360fe47b114604e5780636d4ce63c146078575b600080fd5b348015605957600080fd5b5060766004803603810190808035906020019092919050505060a0565b005b348015608357600080fd5b50608a60aa565b6040518082815260200191505060405180910390f35b8060008190555050565b600080549050905600a165627a7a72305820d7c51cc18a0c1b64c3d1d0806932504e06ea137a804ae530c137bef4743e7c210029",
+  "sourceMap": "27:188:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:188:1;;;;;;;",
+  "deployedSourceMap": "27:188:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;73:63;;8:9:-1;5:2;;;30:1;27;20:12;5:2;73:63:1;;;;;;;;;;;;;;;;;;;;;;;;;;138:74;;8:9:-1;5:2;;;30:1;27;20:12;5:2;138:74:1;;;;;;;;;;;;;;;;;;;;;;;73:63;124:6;109:12;:21;;;;73:63;:::o;138:74::-;171:7;194:12;;187:19;;138:74;:::o",
+  "source": "pragma solidity ^0.4.8;\r\n\r\ncontract MyNotary {\r\n  uint256 storedNotary;\r\nfunction set(uint256 notary) {\r\n    storedNotary = notary;\r\n  }\r\nfunction get() constant returns (uint256) {\r\n    return storedNotary;\r\n  }\r\n}\r\n",
+  "sourcePath": "G:/Javascript/ethereum/truffle/truffle-demo/contracts/MyNotary.sol",
   "ast": {
-    "absolutePath": "/G/Javascript/ethereum/truffle/demo/contracts/Storage.sol",
+    "absolutePath": "/G/Javascript/ethereum/truffle/truffle-demo/contracts/MyNotary.sol",
     "exportedSymbols": {
-      "Storage": [
+      "MyNotary": [
         79
       ]
     },
@@ -68,16 +68,16 @@
         "linearizedBaseContracts": [
           79
         ],
-        "name": "Storage",
+        "name": "MyNotary",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
             "id": 60,
-            "name": "storedData",
+            "name": "storedNotary",
             "nodeType": "VariableDeclaration",
             "scope": 79,
-            "src": "49:18:1",
+            "src": "50:20:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -88,7 +88,7 @@
               "id": 59,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "49:7:1",
+              "src": "50:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -101,7 +101,7 @@
             "body": {
               "id": 69,
               "nodeType": "Block",
-              "src": "97:30:1",
+              "src": "102:34:1",
               "statements": [
                 {
                   "expression": {
@@ -114,11 +114,11 @@
                     "leftHandSide": {
                       "argumentTypes": null,
                       "id": 65,
-                      "name": "storedData",
+                      "name": "storedNotary",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 60,
-                      "src": "104:10:1",
+                      "src": "109:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -129,17 +129,17 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "id": 66,
-                      "name": "data",
+                      "name": "notary",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 62,
-                      "src": "117:4:1",
+                      "src": "124:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "104:17:1",
+                    "src": "109:21:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -147,7 +147,7 @@
                   },
                   "id": 68,
                   "nodeType": "ExpressionStatement",
-                  "src": "104:17:1"
+                  "src": "109:21:1"
                 }
               ]
             },
@@ -166,10 +166,10 @@
                 {
                   "constant": false,
                   "id": 62,
-                  "name": "data",
+                  "name": "notary",
                   "nodeType": "VariableDeclaration",
                   "scope": 70,
-                  "src": "83:12:1",
+                  "src": "86:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -180,7 +180,7 @@
                     "id": 61,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "83:7:1",
+                    "src": "86:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -190,17 +190,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "82:14:1"
+              "src": "85:16:1"
             },
             "payable": false,
             "returnParameters": {
               "id": 64,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "97:0:1"
+              "src": "102:0:1"
             },
             "scope": 79,
-            "src": "70:57:1",
+            "src": "73:63:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -209,17 +209,17 @@
             "body": {
               "id": 77,
               "nodeType": "Block",
-              "src": "171:30:1",
+              "src": "180:32:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "id": 75,
-                    "name": "storedData",
+                    "name": "storedNotary",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 60,
-                    "src": "185:10:1",
+                    "src": "194:12:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -228,7 +228,7 @@
                   "functionReturnParameters": 74,
                   "id": 76,
                   "nodeType": "Return",
-                  "src": "178:17:1"
+                  "src": "187:19:1"
                 }
               ]
             },
@@ -244,7 +244,7 @@
               "id": 71,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "141:2:1"
+              "src": "150:2:1"
             },
             "payable": false,
             "returnParameters": {
@@ -257,7 +257,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 78,
-                  "src": "162:7:1",
+                  "src": "171:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -268,7 +268,7 @@
                     "id": 72,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "162:7:1",
+                    "src": "171:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -278,25 +278,25 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "161:9:1"
+              "src": "170:9:1"
             },
             "scope": 79,
-            "src": "129:72:1",
+            "src": "138:74:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 80,
-        "src": "27:177:1"
+        "src": "27:188:1"
       }
     ],
-    "src": "0:206:1"
+    "src": "0:217:1"
   },
   "legacyAST": {
-    "absolutePath": "/G/Javascript/ethereum/truffle/demo/contracts/Storage.sol",
+    "absolutePath": "/G/Javascript/ethereum/truffle/truffle-demo/contracts/MyNotary.sol",
     "exportedSymbols": {
-      "Storage": [
+      "MyNotary": [
         79
       ]
     },
@@ -324,16 +324,16 @@
         "linearizedBaseContracts": [
           79
         ],
-        "name": "Storage",
+        "name": "MyNotary",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
             "id": 60,
-            "name": "storedData",
+            "name": "storedNotary",
             "nodeType": "VariableDeclaration",
             "scope": 79,
-            "src": "49:18:1",
+            "src": "50:20:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -344,7 +344,7 @@
               "id": 59,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "49:7:1",
+              "src": "50:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -357,7 +357,7 @@
             "body": {
               "id": 69,
               "nodeType": "Block",
-              "src": "97:30:1",
+              "src": "102:34:1",
               "statements": [
                 {
                   "expression": {
@@ -370,11 +370,11 @@
                     "leftHandSide": {
                       "argumentTypes": null,
                       "id": 65,
-                      "name": "storedData",
+                      "name": "storedNotary",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 60,
-                      "src": "104:10:1",
+                      "src": "109:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -385,17 +385,17 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "id": 66,
-                      "name": "data",
+                      "name": "notary",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 62,
-                      "src": "117:4:1",
+                      "src": "124:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "104:17:1",
+                    "src": "109:21:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -403,7 +403,7 @@
                   },
                   "id": 68,
                   "nodeType": "ExpressionStatement",
-                  "src": "104:17:1"
+                  "src": "109:21:1"
                 }
               ]
             },
@@ -422,10 +422,10 @@
                 {
                   "constant": false,
                   "id": 62,
-                  "name": "data",
+                  "name": "notary",
                   "nodeType": "VariableDeclaration",
                   "scope": 70,
-                  "src": "83:12:1",
+                  "src": "86:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -436,7 +436,7 @@
                     "id": 61,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "83:7:1",
+                    "src": "86:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -446,17 +446,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "82:14:1"
+              "src": "85:16:1"
             },
             "payable": false,
             "returnParameters": {
               "id": 64,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "97:0:1"
+              "src": "102:0:1"
             },
             "scope": 79,
-            "src": "70:57:1",
+            "src": "73:63:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -465,17 +465,17 @@
             "body": {
               "id": 77,
               "nodeType": "Block",
-              "src": "171:30:1",
+              "src": "180:32:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "id": 75,
-                    "name": "storedData",
+                    "name": "storedNotary",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 60,
-                    "src": "185:10:1",
+                    "src": "194:12:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -484,7 +484,7 @@
                   "functionReturnParameters": 74,
                   "id": 76,
                   "nodeType": "Return",
-                  "src": "178:17:1"
+                  "src": "187:19:1"
                 }
               ]
             },
@@ -500,7 +500,7 @@
               "id": 71,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "141:2:1"
+              "src": "150:2:1"
             },
             "payable": false,
             "returnParameters": {
@@ -513,7 +513,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 78,
-                  "src": "162:7:1",
+                  "src": "171:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -524,7 +524,7 @@
                     "id": 72,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "162:7:1",
+                    "src": "171:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -534,41 +534,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "161:9:1"
+              "src": "170:9:1"
             },
             "scope": 79,
-            "src": "129:72:1",
+            "src": "138:74:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 80,
-        "src": "27:177:1"
+        "src": "27:188:1"
       }
     ],
-    "src": "0:206:1"
+    "src": "0:217:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.4.26+commit.4563c3fc.Emscripten.clang"
   },
   "networks": {
-    "1559070365998": {
+    "4": {
       "events": {},
       "links": {},
-      "address": "0xB9B92AEBE0B4A75fCF58c6A401d22946945d0c06",
-      "transactionHash": "0x48ecdee725a6736c133614958912317a76be79321a8c0ed84d53a8c6e9fbb31b"
-    },
-    "1559142103590": {
-      "events": {},
-      "links": {},
-      "address": "0xCAb98c286EDAf3CF01E37474D7ef3d188F3BAc25",
-      "transactionHash": "0xb7d6731fe7a98fe2fcb2e4276df91ebe707be395ac8df281c5d7ce9b6b2082dd"
+      "address": "0xa29Bf5471Ad09F76C8C1b2Ab6b38c3D48bd97E69",
+      "transactionHash": "0xe96ccdc47527d8e65bbcf6f46c9fadb97b9ca62c35ec3232ec09afd3b54bb6ae"
     }
   },
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-05-29T16:01:03.922Z",
+  "updatedAt": "2019-05-29T18:46:31.752Z",
   "devdoc": {
     "methods": {}
   },
